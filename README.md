@@ -2,8 +2,16 @@
 
 Féléves feladat: 
 
-- C nyelven POSIX és/vagy OpenMP felhasználásával egy program, amely egyszerű numerikus integrálást végez.
-- A program akár különféle szabályok/módszerek mentén képes elvégezni egyszerű numerikus integrálást.
+- C nyelven POSIX és/vagy OpenMP felhasználásával egy program, amely numerikus integrálást végez.
+- A program különféle szabályok/módszerek mentén képes elvégezni egyszerű numerikus integrálást.
 - Kiválasztható, hogy mely szabály/módszer alapján szeretnénk elvégeztetni az integrálást.
+- A választható numerikus integrálási szabályok:
+  - Téglalap-szabály (1,2) szerinti
+  - Trapéz-szabály szerinti
 - Ezután megadhatjuk az x koordinátákat és a felvett értékeket.
 - A program ezt követően elvégzi a numerikus integrálást.
+- Az integrál közelítés menete például trapéz szabály szerint (párhuzamosítással):
+  - 1. *Az integrál intervallumának felosztása részintervallumokra, amelyeket külön-külön dolgozhatunk fel a különböző szálakban.
+  - 2. A részintervallumokhoz tartozó trapézok területének kiszámítása a trapézszabály használatával. (Fontos megjegyezeni, hogy ez nem tartozik a párhuzamosításhoz
+       közvetlenül)
+  - 3. *A részintervallumok területeinek összegzése a végső integrál értékének meghatározásához.
