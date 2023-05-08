@@ -3,7 +3,7 @@
 Féléves feladat: 
 
 - C nyelven POSIX és OpenMP felhasználásával egy program, amely numerikus integrálást végez.
-- A program különféle szabályok/módszerek mentén képes elvégezni egyszerű numerikus integrálást.
+- A program előre meghatározott szabályok/módszerek mentén képes elvégezni numerikus integrálást.
 - Kiválasztható, hogy mely szabály/módszer alapján szeretnénk elvégeztetni az integrálást.
 - A választható numerikus integrálási szabályok:
   - Téglalap-szabály (1,2) szerinti
