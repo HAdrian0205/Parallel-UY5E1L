@@ -16,4 +16,4 @@ Féléves feladat:
        közvetlenül)
   - 3. *A részintervallumok területeinek összegzése a végső integrál értékének meghatározásához.
 
-* jelentése: Párhuzamosítás alkalmazásával elkészülő lépés.
+- "*" jelentése: Párhuzamosítás alkalmazásával elkészülő lépés.
