@@ -35,11 +35,10 @@ public class Main extends Data {
 		sc.nextLine();
 		//
 		System.out.println("Melyik függvény? (0 - sin, 1 - cos, 2 - exp, 3 - sqrt, 4 - log)");
+		func = sc.nextInt();
 		if((func == 3 || func == 4) && (min > 0 || max > 0)) {
 			System.out.println("Negatív számot tartalmazó intervallum esetén nem használhatod ezt a függvényt!");
 			System.exit(0);
-		} else {
-			func = sc.nextInt();
 		}
 		sc.nextLine();
 		//
