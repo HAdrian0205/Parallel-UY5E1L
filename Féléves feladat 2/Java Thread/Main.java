@@ -2,8 +2,6 @@ package thread;
 
 import java.util.Scanner;
 
-import seq.Data;
-
 import java.lang.Math;
 
 public class Main extends Data {
@@ -14,7 +12,7 @@ public class Main extends Data {
 	public static void main(String[] args) {
 		makeXArray();
 		
-		System.out.println("A közelítés értéke: " + sum);
+		System.out.println("A kÃ¶zelÃ­tÃ©s Ã©rtÃ©ke: " + sum);
 	}
 	
 	public static Data getDatas() {
@@ -36,16 +34,16 @@ public class Main extends Data {
 		size = sc.nextInt();
 		sc.nextLine();
 		//
-		System.out.println("Melyik függvény? (0 - sin, 1 - cos, 2 - exp, 3 - sqrt, 4 - log)");
+		System.out.println("Melyik fÃ¼ggvÃ©ny? (0 - sin, 1 - cos, 2 - exp, 3 - sqrt, 4 - log)");
 		if((func == 3 || func == 4) && (min > 0 || max > 0)) {
-			System.out.println("Negatív számot tartalmazó intervallum esetén nem használhatod ezt a függvényt!");
+			System.out.println("NegatÃ­v szÃ¡mot tartalmazÃ³ intervallum esetÃ©n nem hasznÃ¡lhatod ezt a fÃ¼ggvÃ©nyt!");
 			System.exit(0);
 		} else {
 			func = sc.nextInt();
 		}
 		sc.nextLine();
 		//
-		System.out.println("Adja meg, melyik formulát alkalmazná: (0 - egyszerû téglalap, 1 - összetett téglalap, 2 - összetett trapéz)");
+		System.out.println("Adja meg, melyik formulÃ¡t alkalmaznÃ¡: (0 - egyszerÃ» tÃ©glalap, 1 - Ã¶sszetett tÃ©glalap, 2 - Ã¶sszetett trapÃ©z)");
 		mode = sc.nextInt();
 		sc.nextLine();
 		
@@ -109,7 +107,7 @@ public class Main extends Data {
 	    long endTime = System.currentTimeMillis();
 	    long executionTime = endTime - startTime;
 	    
-	    System.out.println("Futási idõ: " + executionTime + " ms");
+	    System.out.println("FutÃ¡si idÃµ: " + executionTime + " ms");
 	}
 	
 	public static void calcIntegral(int threadNumber, int startNumber, int endNumber, int threadCount, 
@@ -156,7 +154,7 @@ public class Main extends Data {
         } else if (data.getFunc() == 4) {
             return Math.log(x);
         } else {
-            throw new IllegalArgumentException("Érvénytelen függvény. Válassz 0 és 4 közötti egész számot.");
+            throw new IllegalArgumentException("Ã‰rvÃ©nytelen fÃ¼ggvÃ©ny. VÃ¡lassz 0 Ã©s 4 kÃ¶zÃ¶tti egÃ©sz szÃ¡mot.");
         }
 	}
 }
